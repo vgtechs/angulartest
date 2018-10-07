@@ -1,0 +1,220 @@
+
+
+
+
+
+
+  
+<style>
+.bottom_m {
+
+text-align: center;
+position: fixed;
+bottom: 5px;
+
+}
+
+
+</style> 
+  
+<script>
+
+prodlist=
+{
+    "Product 1", "Product 2", "Product 3", "Product 4", "Product 5", "Product 6", "Product 7", "Product 8", "Product 9", "Product 10"    
+}
+
+
+</script>
+  
+ 
+    <div class="container">
+   
+   <!---------Screen #1-------------->
+	<div class="row" id="scr1"   *ngIf="show1">
+    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="text-align: center;">
+    
+            <h2 class="title">OUR APP</h2>
+            <h3>SOME TEXT</h3>
+			   <h3>MORE TEXT</h3>
+			      <h3 class="title">Cheap</h3>
+				     <h3 class="title">Quality</h3>
+					    <h3 class="title">Fast</h3>
+							
+    </div>
+		  
+		  
+		 
+    </div>
+    
+<!---------Screen #2-------------->
+
+	<div class="row" id="scr2"  *ngIf="show2">
+    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" >
+    
+            <h2 class="title" style="text-align: center;">HOW IT WORKS</h2>
+            <h3>1. Choose product</h3>
+			   <h3>2. Choose delivery</h3>
+			      <h3>3. Get Price quote</h3>
+				     
+    </div>
+		  
+		  
+		 
+    </div>
+
+<!---------Screen #3-------------->
+
+	<div class="row" id="scr3"    *ngIf="show3">
+	
+	
+	
+	<div class="card card-nav-tabs card-plain">
+                            <div class="card-header card-header-info">
+                                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                                <div class="nav-tabs-navigation">
+                                    <div class="nav-tabs-wrapper">
+                                        <ul class="nav nav-tabs" data-tabs="tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active show" href="#popular" data-toggle="tab">Popular<div class="ripple-container"></div></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#search" data-toggle="tab">Search<div class="ripple-container"></div></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#account" data-toggle="tab">My Account<div class="ripple-container"></div></a>
+                                            </li>
+											
+											 <li class="nav-item">
+                                                <a class="nav-link" href="#contact" data-toggle="tab">Contact us<div class="ripple-container"></div></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><div class="card-body ">
+                                <div class="tab-content">
+                                    <div class="tab-pane active show" id="popular">
+									
+									
+									
+									
+									<table class="table table-shopping">
+
+  <tr *ngFor="let sr of products">
+      <td>{{sr}}<br></td>
+      
+ </tr>
+  </table>
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+                       
+                                    </div>
+                                    <div class="tab-pane" id="search">
+                                         <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+    
+            <h1>Search</h1>
+			
+			<input type="text" class="form-control" id="s">
+		<br>
+			 <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="title">
+                            <h3>I want</h3>
+                        </div>
+
+						
+						     <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                Cheap
+                                <span class="form-check-sign">
+                                    <span class="check"></span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="">
+                                Fast
+                                <span class="form-check-sign">
+                                    <span class="check"></span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                Great
+                                <span class="form-check-sign">
+                                    <span class="check"></span>
+                                </span>
+                            </label>
+                        </div>
+                   
+
+                    </div>
+						
+					<div style="text-align: center;">
+						<button class="btn btn-info btn-lg"  onclick="alert('That`s all!')">GO</button>
+						</div>
+    </div>
+                                    </div>
+                                    <div class="tab-pane" id="account">
+                                        <p>Hi</p>
+                                    </div>
+									
+									 <div class="tab-pane" id="contact">
+                                        <p>Hello</p>
+                                    </div>
+                                </div>
+                            </div></div>
+	
+	
+	
+	
+   
+		  
+		 
+    </div>
+	
+	<!---------Screen #4-------------->
+
+	
+		  
+
+
+
+
+
+
+
+
+
+	
+    </div>
+     
+  
+  <div class="bottom_m" style="width: 100%; text-align: center;">
+   
+     
+    
+						<button class="btn btn-info" id="b1" (click)="Go1()"   *ngIf="showb1">Next>></button>
+							<button class="btn  btn-info"  id="b2" (click)="Go2()"    *ngIf="showb2">OK</button>
+							
+									 
+						
+  
+  </div>
+  
+
